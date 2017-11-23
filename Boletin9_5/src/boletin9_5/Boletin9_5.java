@@ -10,35 +10,35 @@ import java.util.Scanner;
 public class Boletin9_5 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         
-        int op=0;
+        int opcionMenu=0;
         
         do{
             System.out.println("****** ELIGE UNA SERIE ******");
             System.out.println("1)Serie Numeros Pares \n2)Serie Numeros Neg/Pos \n3)Sere Fibonacci\n4)Salir \n");
             System.out.print("----->   ");
-            op = sc.nextInt();
-            switch (op){
+            opcionMenu = scanner.nextInt();
+            switch (opcionMenu){
                 case 1: System.out.println("Introduzca el numero de repeticiones:");
-                    int num = sc.nextInt();
-                    Clase9_5 c1 = new Clase9_5(num);
-                    c1.mostrarSerie1();
+                    int rep = scanner.nextInt();
+                    Clase9_5 serie1 = new Clase9_5(rep);
+                    serie1.mostrarSeriePares();
                     break;
                 case 2: System.out.println("Introduzca el numero de repeticiones:");
-                    int num2 = sc.nextInt();
-                    Clase9_5 c2 = new Clase9_5(num2);
-                    c2.mostrarSerie2();
+                    int rep2 = scanner.nextInt();
+                    Clase9_5 serie2 = new Clase9_5(rep2);
+                    serie2.mostrarSeriePosNeg();
                     break;
                 case 3: System.out.println("Introduzca el numero de repeticiones:");
-                    int num3 = sc.nextInt();
-                    Clase9_5 c3 = new Clase9_5(num3);
-                    c3.mostrarSerie3();
+                    int rep3 = scanner.nextInt();
+                    Clase9_5 serie3 = new Clase9_5(rep3);
+                    serie3.mostrarSerieFibonacci();
                     break;
                 case 4: break;
                 default: System.out.println("La opcion introducida no es valida");
             }
-        }while (op!=4);
+        }while (opcionMenu!=4);
        
     }
     

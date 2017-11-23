@@ -7,18 +7,18 @@ public class Clase9_5 {
         this.cont=cont;
     }
     
-    public void mostrarSerie1(){
+    public void mostrarSeriePares(){
         int i;
-        int x=0;
+        int num=0;
         
         for(i=0;i<cont;i++){
-            x=x+2;
-            System.out.print(x+" + ");
+            num+=2;
+            System.out.print(num+" + ");
         }
         System.out.print("\n");
     }
     
-    public void mostrarSerie2(){
+    public void mostrarSeriePosNeg(){
         int i;
         
         for(i=1;i<cont;i++){
@@ -32,7 +32,7 @@ public class Clase9_5 {
         System.out.print("\n");
     }
     
-    public void mostrarSerie3(){
+    public void mostrarSerieFibonacci(){
         int i;
         int sum=0;
         int num1=0;
